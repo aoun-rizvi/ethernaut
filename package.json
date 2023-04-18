@@ -10,6 +10,7 @@
     "hh-test-ropsten": "npx hardhat test --network ropsten",
     "hh-node": "npx hardhat node",
     "hh-deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "hh-deploy-sampleerc721": "npx hardhat run scripts/deploySampleErc721.js --network localhost",
     "hh-deploy-goerli": "npx hardhat run scripts/deploySampleErc721.js --network goerli",
     "hh-deploy-sepolia": "npx hardhat run scripts/deploySampleErc721.js --network sepolia",
     "hh-deploy-localGeth": "rm -fr .openzeppelin && npx hardhat run scripts/deploy.js --network localGeth",
