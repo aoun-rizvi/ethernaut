@@ -26,7 +26,7 @@ const main = async () => {
   const provider = new ethers.providers.JsonRpcProvider(RPC_NODE);
   const contract = new ethers.Contract(ethers.utils.getAddress(DEPLOYED_CONTRACT_ADDRESS), TelephoneAttackAbi.abi, provider);
   
-  // flip coin
+  // call attack contract
   await contract.connect(ACCOUNTS[0]).callSecondAttacker(ACCOUNTS[0].address);
   console.log('Action performed on contract:', contract.address);
 };
